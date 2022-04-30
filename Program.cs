@@ -18,7 +18,41 @@ namespace VariablesCS
 
             Console.Write("Please type your name then press enter ->...");
             string userName = Console.ReadLine();
-            Console.WriteLine($"En taro adun, {userName}!");
+            if (string.IsNullOrWhiteSpace(userName))
+            {
+                Console.WriteLine("Input cannot be empty, please type your name then press enter ->..."); 
+                string filledUserName = Console.ReadLine();
+            }
+            else if (userName.Trim().ToLower() != "alice")
+            { 
+                Console.WriteLine($"En taro adun, {userName}!"); 
+            }
+            else
+            {
+                {
+                    string chesire = @"
+                                         .'\   /`.
+                                       .'.-.`-'.-.`.
+                                  ..._:   .-. .-.   :_...
+                                .'    '-.(o ) (o ).-'    `.
+                               :  _    _ _`~(_)~`_ _    _  :
+                              :  /:   ' .-=_   _=-. `   ;\  :
+                              :   :|-.._  '     `  _..-|:   :
+                               :   `:| |`:-:-.-:-:'| |:'   :
+                                `.   `.| | | | | | |.'   .'
+                                  `.   `-:_| | |_:-'   .'
+                                    `-._   ````    _.-'
+                                        ``-------''
+
+                         Then it doesn't matter which way you go, Alice.
+                                   Press enter to continue    
+                                                                 ";
+
+                    Console.WriteLine(chesire);
+                    Console.Read();
+                }
+            }
+            
             
             Console.Write("Please type a number then press enter ->..."); 
             string firstNumberAsString = Console.ReadLine(); 
