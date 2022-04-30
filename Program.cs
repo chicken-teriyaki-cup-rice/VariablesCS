@@ -18,7 +18,13 @@ namespace VariablesCS
 
             Console.Write("Please type your name then press enter ->...");
             string userName = Console.ReadLine();
-            Console.Write($"En taro adun, {userName}");
+            Console.WriteLine($"En taro adun, {userName}!");
+            
+            Console.Write("Please type a number then press enter ->..."); 
+            string firstNumberAsString = Console.ReadLine(); 
+            Console.Write("Please type another number then press enter ->..."); 
+            string secondNumberAsString = Console.ReadLine(); 
+            
         }
     }
 }
