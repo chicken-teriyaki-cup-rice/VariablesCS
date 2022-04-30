@@ -23,7 +23,12 @@ namespace VariablesCS
             Console.Write("Please type a number then press enter ->..."); 
             string firstNumberAsString = Console.ReadLine(); 
             Console.Write("Please type another number then press enter ->..."); 
-            string secondNumberAsString = Console.ReadLine(); 
+            string secondNumberAsString = Console.ReadLine();
+
+            Double firstOperand = double.Parse(firstNumberAsString);
+            Double secondOperand = double.Parse(secondNumberAsString);
+            
+            
             
         }
     }
