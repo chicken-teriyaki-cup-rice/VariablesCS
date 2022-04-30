@@ -27,9 +27,19 @@ namespace VariablesCS
 
             Double firstOperand = double.Parse(firstNumberAsString);
             Double secondOperand = double.Parse(secondNumberAsString);
+
+            Double sum = firstOperand + secondOperand;
+            Double difference = firstOperand - secondOperand;
+            Double product = firstOperand * secondOperand;
+            Double quotient = firstOperand / secondOperand;
+            Double remainder = firstOperand % secondOperand;
+            Console.WriteLine("\nYou have now been subscribed to useless number facts. Standard data and text messaging rates may apply.\n"); 
+            Console.WriteLine("Here are useless facts about your numbers: \n"); 
+            Console.WriteLine($"The sum of the two numbers is {sum}.\nThe difference between the numbers is {difference}.\n" +
+                          $"The product of the two numbers is {product}.\nWhen the {firstOperand} is divided by the {secondOperand}, the quotient is {quotient}.\nThe remainder is {remainder}." ); 
             
             
-            
+
         }
     }
 }
